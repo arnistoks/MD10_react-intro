@@ -11,7 +11,7 @@ const App = () => (
         {' '}
         <code>src/App.tsx</code>
         {' '}
-        and save to reload.
+        and save to reload.assasaassa
       </p>
       <a
         className="App-link"
