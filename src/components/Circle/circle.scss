@@ -1,0 +1,20 @@
+.circle {
+    width: 200px;
+    height: 200px;
+    border: 2px solid grey;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.carlogo {
+    width: 100%;
+
+    &:hover {
+        transition: transform .7s ease-in-out;
+        transform: rotate(360deg);
+    }
+}

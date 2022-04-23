@@ -1,0 +1,14 @@
+.navigation {
+    background-color: aqua;
+    padding: 30px;
+    border: 3px solid grey;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.href {
+    cursor: pointer;
+}
