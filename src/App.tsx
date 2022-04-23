@@ -8,6 +8,29 @@ import Circle from './components/Circle/Circle';
 import Card from './components/Card/Card';
 import Cards123 from './components/Card/Cards123';
 
+const ButtonDetails = [
+  {
+    id: 1,
+    title: 'Button 1',
+    backgroundColor: 'orange',
+  },
+  {
+    id: 2,
+    title: 'Button 2',
+    backgroundColor: 'blue',
+  },
+  {
+    id: 3,
+    title: 'Button 3',
+    backgroundColor: 'green',
+  },
+  {
+    id: 4,
+    title: 'Button 4',
+    backgroundColor: 'teal',
+  },
+];
+
 const App = () => (
   <section className="section">
     <div className="container">
@@ -37,7 +60,13 @@ const App = () => (
       <Cards123 title="TITLE 3" text="DECRIPTION 3" />
     </div>
     <div className="container container__button">
-      <Buttons1234 />
+      {ButtonDetails.map((item) => (
+        <Buttons1234
+          id={item.id}
+          name={item.title}
+          backgroundColor={item.backgroundColor}
+        />
+      ))}
     </div>
   </section>
 );
